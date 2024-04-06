@@ -29,8 +29,11 @@ function validation() {
   ) {
     popup.classList.add("open-slide");
     return false;
+  } else {
+    var popup = document.getElementById("popup");
   }
 }
-var popup = document.getElementById("popup");
+
 function closeSlide() {
-  popup.classList.remove('open-slide')}
+  popup.classList.remove('open-slide')
+}
