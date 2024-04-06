@@ -22,7 +22,7 @@
     <div class="container">
       <div class="form-box">
         <form
-          action="/regis"
+          action="saveregister.php"
           method="post"
           name="Formfill"
           onsubmit="return validation()"
@@ -31,15 +31,15 @@
           <p id="result"></p>
           <div class="input-box">
             <i class="bx bx-user"></i>
-            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="username" id="username" placeholder="Username" />
           </div>
           <div class="input-box">
             <i class="bx bx-envelope"></i>
-            <input type="email" name="email" placeholder="Email" />
+            <input type="email" name="email" id="email" placeholder="Email" />
           </div>
           <div class="input-box">
             <i class="bx bx-lock"></i>
-            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password" id="password" placeholder="Password" />
           </div>
           <div class="input-box">
             <i class="bx bx-lock"></i>
@@ -59,7 +59,7 @@
           </div>
           <div class="group">
             <!-- <span><a href="#">Forget Password</a></span> -->
-            <span><a href="index.html">Already registered?</a></span>
+            <span><a href="login.php">Already registered?</a></span>
           </div>
         </form>
       </div>
@@ -71,10 +71,12 @@
           Registrasimu Berhasil <br />
           Klik OK Untuk Login
         </p>
-        <a href="index.html"><button onclick="closeSlide()">OK</button></a>
+          <!-- <form action="saveregister.php" method="POST" name="Formfill">
+              <button onclick="closeSlide()">OK</button>
+          </form> -->
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="validasilogin.js"></script>
   </body>
 </html>
