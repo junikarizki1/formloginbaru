@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="form-box">
-            <form action="savelogin.php" name="Formfill" method="POST" onsubmit="return validation()">
+            <form action="crud.php" name="Formfill" method="POST" onsubmit="return validationlogin()">
                 <h2>Login</h2>
                 <p id="result"></p>
                 <div class="input-box">
@@ -36,9 +36,9 @@
                 <input
                     type="submit"
                     class="btn"
-                    onclick="validation()"
-                    name="cmdlogin"
-                    id="cmdlogin"
+                    onclick="validationlogin()"
+                    name="cmd"
+                    id="cmd"
                     value="Login"
                 />
                 </div>
@@ -64,7 +64,7 @@
     </div>
 
     
-    <script src="validasilogin.js"></script>
+    <script src="validasi.js"></script>
 
 </body>
 </html>
