@@ -22,7 +22,7 @@
     <div class="container">
       <div class="form-box">
         <form
-          action="saveregister.php"
+          action="crud.php"
           method="post"
           name="Formfill"
           onsubmit="return validation()"
@@ -54,6 +54,8 @@
               type="submit"
               class="btn"
               onclick="validation()"
+              name="cmd"
+              id="cmd"
               value="Register"
             />
           </div>
@@ -77,6 +79,6 @@
       </div>
     </div>
 
-    <script src="validasilogin.js"></script>
+    <script src="validasi.js"></script>
   </body>
 </html>
